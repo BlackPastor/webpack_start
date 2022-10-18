@@ -198,7 +198,5 @@ export async function getRandomChinese(length) {
   return result;
 }
 
-getRandomChinese(4).then(res => {
-  console.log(res);
-});
+
 

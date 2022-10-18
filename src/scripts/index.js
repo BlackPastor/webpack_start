@@ -29,8 +29,7 @@ document.body.querySelector(".homework7").innerHTML = `Homework 7 <br>
 ${taxes} y.e`;
 document.body.querySelector(".homework8").innerHTML = `Homework 8 <br> 
 ${studentArtem}`;
-document.body.querySelector(".homework9").innerHTML = `Homework 9 <br> 
-${generateBlocksInterval()}`;
+generateBlocksInterval()
 document.body.querySelector(".homework10").innerHTML = `Homework 10 <br> 
 <div class="container2" style="background: url(${img.src})">
 <div class="music-button" id="keyA">
@@ -66,7 +65,12 @@ document.body.querySelector(".homework10").innerHTML = `Homework 10 <br>
     <div class="text">Key8</div>
 </div>
 </div>
-</div>
-${(audio, getKeySound())}`;
-document.body.querySelector(".homework11").innerHTML = `Homework 11 <br>
-${getRandomChinese()}`;
+</div>`;
+getKeySound()
+document.body.querySelector(".homework11").innerHTML = `
+${getRandomChinese(4).then((res) => document.body.querySelector(".homework11").innerHTML = "Homework 11 <br>" + res)}
+`;
+;
+
+document.body.querySelector(".homework9").innerHTML = `
+`
