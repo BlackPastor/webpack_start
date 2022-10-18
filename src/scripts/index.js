@@ -72,5 +72,5 @@ ${getRandomChinese(4).then((res) => document.body.querySelector(".homework11").i
 `;
 ;
 
-document.body.querySelector(".homework9").innerHTML = `
+document.body.querySelector(".homework9").innerHTML = `Homework 9
 `
